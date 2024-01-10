@@ -1,6 +1,8 @@
 import { Button, Input } from "@material-tailwind/react";
+import { useRef, useState } from "react";
+import { Link, useLoaderData } from "react-router-dom";
 
-const Banner = () => {
+const Banner = ({ data }) => {
   return (
     <div className=" bg-white relative">
       <img
@@ -21,12 +23,14 @@ const Banner = () => {
               className: "min-w-[588px]  bg-white ",
             }}
           />
-          <Button
-            size="sm"
-            className="!absolute right-1 top-1 rounded  bg-[#FF444A]"
-          >
-            Search
-          </Button>
+          <Link to={`/Donation`}>
+            <Button
+              size="sm"
+              className="!absolute right-1 top-1 rounded  bg-[#FF444A]"
+            >
+              Search
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

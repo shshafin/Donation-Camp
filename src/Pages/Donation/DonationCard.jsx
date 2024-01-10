@@ -19,7 +19,7 @@ const DonationCard = ({ donate }) => {
     description,
     price,
   } = donate || {};
-  console.log(donate);
+  
   return (
     <div>
       <Card
